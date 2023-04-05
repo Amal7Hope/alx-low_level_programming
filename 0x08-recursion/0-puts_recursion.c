@@ -2,6 +2,7 @@
 /**
  * _puts_recursion: this function to print string
  * @s: dtring parameter
+ *
  */
 void _puts_recursion(char *s)
 {
