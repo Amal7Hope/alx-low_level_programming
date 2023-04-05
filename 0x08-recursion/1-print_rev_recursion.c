@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _print_rev_recursion => printing string in reserve using rec
- * @s: string
- *
+ * _print_rev_recursion - printing string in reserve using rec
+ * @s: pointer block
+ * Return: void
  */
 void _print_rev_recursion(char *s)
 {
