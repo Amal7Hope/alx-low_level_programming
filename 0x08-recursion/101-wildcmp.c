@@ -14,7 +14,6 @@ int wildcmp(char *str1, char *str2)
 			return (wildcmp(str1, str2 + 1));
 		}
 		return (*str2 == '\0');
-	
 	}
 	if (*str2 == '*')
 	{
