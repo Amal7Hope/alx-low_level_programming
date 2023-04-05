@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * _puts_recursion: this function to print string
- * @s: dtring parameter
- *
+ * @s: pointer to char
+ * Return: No
  */
 void _puts_recursion(char *s)
 {
