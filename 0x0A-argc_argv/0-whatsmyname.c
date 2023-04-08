@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - write a program that prints 'its name'followed by new line
- * @argc: this is the argument count 
+ * @argc: this is the argument count
  * @argv: this is the the argument vector
  * Return: 0
  */
