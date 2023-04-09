@@ -4,7 +4,7 @@
  * main - a function that write a program that prints all arguments it receives
  * @argc: this is numbur of argument
  * @argv: this is array of argument
- * Return 0
+ * Return: always 0 (success)
  */
 int main(int argc, char *argv[])
 {
