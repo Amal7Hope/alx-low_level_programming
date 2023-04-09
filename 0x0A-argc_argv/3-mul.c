@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - program that multiplies two numbers
  * @argc: this is the argument count
@@ -6,7 +7,6 @@
  *
  * Return: 0
  */
-int atoi();
 int main(int argc, char *argv[])
 {
 	int index, multi;
