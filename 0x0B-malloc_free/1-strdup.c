@@ -2,14 +2,15 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * *_strdup - r a p
- * @dtr: pointer 
+ * _strdup - r a p
+ * @str: pointer
  * Return: NULL
  */
 char *_strdup(char *str)
 {
 	char *nstr;
 	unsigned int len, i;
+
 	if (str == NULL)
 	{
 		return (NULL);
@@ -21,14 +22,14 @@ char *_strdup(char *str)
 		len++;
 	}
 
-	nstr = malloc(sizeof(char) * (len = 1));
+	nstr = malloc(sizeof(char) * (len + 1));
 
 	if (nstr == NULL)
 	{
 		return (NULL);
 	}
 
-	for (i = 0; i > len; i++)
+	for (i = 0; i < len; i++)
 	{
 		nstr[i] = str[i];
 	}
