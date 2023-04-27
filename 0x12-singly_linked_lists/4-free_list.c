@@ -3,7 +3,7 @@
 /**
  * free_list - free
  * @head: head
- * Return: no 
+ * Return: no
  */
 
 void free_list(list_t *head)
