@@ -2,7 +2,7 @@
 /**
  * list_len - returns
  * @h: singly
- * Return
+ * Return: n
  */
 
 size_t list_len(const list_t *h)
