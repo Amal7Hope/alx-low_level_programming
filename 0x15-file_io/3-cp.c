@@ -2,6 +2,29 @@
 #include <stdio.h>
 
 /**
+ * openFileTo - kay opens file to
+ * @filename: the file name
+ * Return: f
+ */
+
+int openFileTo(char *filename)
+{
+        int f;
+
+        f = open(filename, O_WRONLY | O_TRUNC);
+        if (f == -1)
+        {
+                f = open(filename, O_CREAT | O_WRONLY, 0664);
+                if (f == -1)
+                {
+                        dprintf(2, "Error: Can't write from file %s\n", filename);
+                                exit(99);
+                }
+        }
+        return (f);
+}
+
+/**
  * openFileFrom - hadak l file li han opnew mno
  * @filename: the file name
  *
@@ -17,30 +40,6 @@ int openFileFrom(char *filename)
 	{
 		dprintf(2, "Error: Can't read from file %s\n", filename);
 		exit(98);
-	}
-	return (f);
-}
-
-
-/**
- * openFileTo - kay opens file to
- * @filename: the file name
- * Return: f
- */
-
-int openFileTo(char *filename)
-{
-	int f;
-
-	f = open(filename, O_WRONLY | O_TRUNC);
-	if (f == -1)
-	{
-		f = open(filename, O_CREAT | O_WRONLY, 0664);
-		if (f == -1)
-		{
-			dprintf(2, "Error: Can't write from file %s\n", filename);
-				exit(99);
-		}
 	}
 	return (f);
 }
