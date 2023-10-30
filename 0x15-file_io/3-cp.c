@@ -38,7 +38,7 @@ int openFileTo(char *filename)
 		f = open(filename, O_CREAT | O_WRONLY, 0664);
 		if (f == -1)
 		{
-			dprintf(2, "Error: Can't read from file %s\n", filename);
+			dprintf(2, "Error: Can't write from file %s\n", filename);
 				exit(99);
 		}
 	}
