@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#define permissions (S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH)
 
 /**
  * openFileTo - kay opens file to
